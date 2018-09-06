@@ -41,9 +41,9 @@ You can also modify OJN metadata by selecting desired song and modify the fields
 
 ## Optimizing Music List ##
 
-Often songs data get duplicated due to e-Games and Nowcom versioning. This getting worse when the song is exactly the same but contain different ID to each other. To remove such files Edit -> Remove duplicate. This will multiple songs with same song title.  
+Often songs data get duplicated due to e-Games and Nowcom versioning. This getting worse when the song is exactly the same but contain different ID to each other. To remove such files, click Edit -> Remove duplicate. This will remove multiple songs with same song title.  
 
-Setting up key mode for every 3K and 5K chart are tedious things to do. To make this process easier, use key mode correction. It simply convert all songs with [3K] / [3M] / [3D] tags to 3K mode, this apply to 5K as well. To use this feature, select Edit -> Autocorrect KeyMode.  
+Setting up key mode for every 3K and 5K chart are tedious things to do. To make this process easier, use key mode correction. It simply convert all songs with [3K] / [3M] / [3D] tags to 3K mode, similar rules apply to 5K as well. To use this feature, select Edit -> Autocorrect KeyMode.  
 
 By default, the program will attempt to auto correct the key mode and will NOT remove duplicate headers upon loading existing file, this behavior can be changed in File -> Preference.
 
