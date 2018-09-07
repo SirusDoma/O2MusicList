@@ -194,6 +194,12 @@ namespace O2MusicList
                 var format = Preference.Instance.PreserveFormat ? headers.Version : Preference.Instance.FileFormat;
                 int keymode = Preference.Instance.KeyMode;
 
+                // Auto correct key mode before saving
+                if (keymode == 0 && Preference.Instance.AutoCorrectKeyMode)
+                {
+                    AutoCorrectKeyMode();
+                }
+
                 // Write the data into disk and reset dirty state
                 File.WriteAllBytes(PathTextBox.Text, OJNListEncoder.Encode(headers, format, Preference.Instance.IsCompactBuild, keymode));
 
