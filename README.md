@@ -13,8 +13,8 @@ Currently support both format: Chinese and Korean OJNList as well as encrypting 
 
 By default, this program will attempt to synchronize between OJNList and OJN files to save your time from inconsistency data. There are various build options to try.  
 
+This program requires .NET 4.6.1 in order to run properly.  
 Special thanks to Kishi, Dugi, Lujia and arcmess.
-This program requires .NET 4.6.1 in order to run properly.
 
 ## Setup Character Encoding ##
 
@@ -38,6 +38,15 @@ In order to add OJN files into OJNList, click Add button then select OJN files t
 Note that you can select multiple files at a time, you can either select decrypted or encrypted OJN file. To remove OJN from OJNList, select songs to remove (hold CTRL to select multiple songs) and click Remove button.  
 
 You can also modify OJN metadata by selecting desired song and modify the fields on the right side of application. By default, the program will attempt to modify OJN file as well, you can turn off this feature in File -> Preference and uncheck "Attempt to synchronize OJN file".
+
+## Manual Synchronization ##
+
+Your selected OJNList may located outside of default O2Jam directory, this may cause automatic synchronization fail.
+This due to the tool behavior to scan Music folder that placed aside Image folder, which is default folder that hold OJNList.dat file.  
+
+In order to synchronize the metadata with OJN files, you'll have to initiate synchronization manually from Edit -> Synchronize menu. Once the selected files are synchronized, you can freely modify the metadata, both OJN and OJNList will affected.  
+
+Keep in mind that manual synchronization will still available to initiate even automatic synchronization is turned off.
 
 ## Optimizing Music List ##
 
